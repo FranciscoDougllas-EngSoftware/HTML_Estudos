@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form{
+            width: 500px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+            padding: 10px;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        label{
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utilizando o Fildset e Legend</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Cadastro Usuario</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Empresa que trabalha</legend>
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado">
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade">
+
+
+            <label for="empresa">Empresa:</label>
+            <input type="text" name="empresa" id="empresa">
+
+            <label for="endereco">Endereco:</label>
+            <address>
+                <textarea name="endereco" id="endereco"></textarea>
+            </address>
+        </fieldset>
+    </form>
+</body>
+</html>
